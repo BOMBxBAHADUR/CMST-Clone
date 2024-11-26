@@ -1,0 +1,71 @@
+/* Style for FullCalendar toolbar buttons */
+.fc-toolbar .fc-button {
+  background-color: #f8f9fa;
+  /* Light background for buttons */
+  color: #333;
+  /* Text color for buttons */
+  border: 1px solid #ccc;
+  /* Border color for buttons */
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 3px;
+  /* Slight margin for spacing */
+  font-size: 14px;
+  /* Slightly smaller text */
+  transition: background-color 0.3s;
+}
+
+.fc-toolbar .fc-button:hover {
+  background-color: #e2e6ea;
+  color: #333;
+  /* Light gray background on hover */
+  cursor: pointer;
+}
+
+/* Style for the calendar title */
+.fc-toolbar-title {
+  font-size: 16px;
+  /* Slightly smaller font size */
+  font-weight: normal;
+  /* Normal font weight */
+  color: #333;
+  /* Title color */
+  padding: 0 10px;
+  /* Add padding for spacing */
+}
+
+/* Style for active view buttons */
+.fc .fc-button-active {
+  background-color: #f8f9fa !important;
+  /* Active button text color */
+  color: #333 !important;
+  border-color: #999;
+  /* Darker border for active buttons */
+}
+
+/* Custom style for toolbar sections to match the layout */
+.fc-toolbar-chunk:first-child {
+  display: flex;
+  align-items: center;
+  /* Gap between prev, next, and today buttons */
+}
+
+.fc-toolbar-chunk:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fc-toolbar-chunk:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.fc-today-button {
+  pointer-events: none;
+  /* Make the button unclickable */
+  background-color: #f8f9fa !important;
+  color: #555 !important;
+  border: 1px solid #999 !important;
+  cursor: default;
+}
